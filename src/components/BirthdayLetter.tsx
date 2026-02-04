@@ -2,32 +2,32 @@ import { Heart, Sparkles, Gift } from 'lucide-react';
 
 const BirthdayLetter = () => {
   return (
-    <section className="py-20 px-4 relative">
+    <section className="py-12 md:py-20 px-4 relative">
       {/* Background Glow - Enhanced */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-[600px] h-[600px] bg-ice/10 rounded-full blur-[150px] animate-cosmic-pulse" />
-        <div className="w-[400px] h-[400px] bg-electric/5 rounded-full blur-[100px] animate-pulse-glow absolute" />
+        <div className="w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-ice/10 rounded-full blur-[100px] md:blur-[150px] animate-cosmic-pulse" />
+        <div className="w-[200px] h-[200px] md:w-[400px] md:h-[400px] bg-electric/5 rounded-full blur-[80px] md:blur-[100px] animate-pulse-glow absolute" />
       </div>
 
       <div className="max-w-3xl mx-auto relative z-10">
         {/* Letter Container */}
-        <div className="letter-container rounded-3xl p-8 md:p-12 fade-in-up hover:shadow-glow-ice transition-all duration-500">
+        <div className="letter-container rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-12 fade-in-up hover:shadow-glow-ice transition-all duration-500">
           {/* Header */}
-          <div className="text-center mb-8">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <Heart className="w-6 h-6 text-ice animate-pulse" />
-              <Gift className="w-8 h-8 text-electric animate-float-gentle" />
-              <Heart className="w-6 h-6 text-ice animate-pulse" />
+          <div className="text-center mb-6 md:mb-8">
+            <div className="flex items-center justify-center gap-2 md:gap-3 mb-3 md:mb-4">
+              <Heart className="w-5 h-5 md:w-6 md:h-6 text-ice animate-pulse" />
+              <Gift className="w-6 h-6 md:w-8 md:h-8 text-electric animate-float-gentle" />
+              <Heart className="w-5 h-5 md:w-6 md:h-6 text-ice animate-pulse" />
             </div>
-            <h2 className="font-cinzel text-3xl md:text-4xl font-bold glow-text text-foreground">
+            <h2 className="font-cinzel text-2xl sm:text-3xl md:text-4xl font-bold glow-text text-foreground">
               A Letter For You
             </h2>
-            <div className="w-24 h-1 bg-gradient-electric mx-auto mt-4 rounded-full" />
+            <div className="w-20 md:w-24 h-1 bg-gradient-electric mx-auto mt-3 md:mt-4 rounded-full" />
           </div>
 
           {/* Letter Content */}
-          <div className="space-y-6 font-rajdhani text-lg text-foreground/90 leading-relaxed">
-          <p className="text-ice text-xl">
+          <div className="space-y-4 md:space-y-6 font-rajdhani text-base sm:text-lg text-foreground/90 leading-relaxed">
+          <p className="text-ice text-lg sm:text-xl">
 
               My Dear Remmy,
 
@@ -87,25 +87,25 @@ const BirthdayLetter = () => {
 
             </p>
 
-            <div className="pt-6 text-center">
-              <p className="text-electric font-cinzel text-xl glow-text">
+            <div className="pt-4 md:pt-6 text-center">
+              <p className="text-electric font-cinzel text-lg sm:text-xl glow-text">
                 Happy Birthday, My Sweet Remmy! 🎂✨
               </p>
-              <p className="text-muted-foreground mt-4 italic">
+              <p className="text-muted-foreground mt-3 md:mt-4 italic text-sm sm:text-base">
                 With all my love and cuddles,
               </p>
-              <p className="text-ice font-semibold text-lg">
+              <p className="text-ice font-semibold text-base sm:text-lg">
                 Your Wifey 💙
               </p>
             </div>
           </div>
 
           {/* Decorative Footer */}
-          <div className="flex justify-center gap-3 mt-8">
+          <div className="flex justify-center gap-2 md:gap-3 mt-6 md:mt-8">
             {[...Array(7)].map((_, i) => (
               <Sparkles
                 key={i}
-                className="w-5 h-5 text-electric/70 animate-pulse-glow"
+                className="w-4 h-4 md:w-5 md:h-5 text-electric/70 animate-pulse-glow"
                 style={{
                   animationDelay: `${i * 0.2}s`,
                 }}
@@ -115,11 +115,11 @@ const BirthdayLetter = () => {
         </div>
 
         {/* Final Quote */}
-        <div className="text-center mt-12">
-          <p className="text-ice/50 font-rajdhani text-sm">
+        <div className="text-center mt-8 md:mt-12 px-4">
+          <p className="text-ice/50 font-rajdhani text-xs sm:text-sm">
             "I am your wifey... and I love you so much."
           </p>
-          <p className="text-electric/50 font-rajdhani text-sm mt-2">
+          <p className="text-electric/50 font-rajdhani text-xs sm:text-sm mt-2">
             "My heart belongs to you, I wubbb u Remmy Mwahhhhhh💖"
           </p>
         </div>

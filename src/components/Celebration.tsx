@@ -66,34 +66,34 @@ const Celebration = () => {
       {/* Music Control - Enhanced */}
       <button
         onClick={toggleMute}
-        className="fixed top-4 right-4 z-50 p-4 glass rounded-full
+        className="fixed top-3 right-3 md:top-4 md:right-4 z-50 p-3 md:p-4 glass rounded-full
                    hover:shadow-glow-electric transition-all duration-500
-                   flex items-center gap-2 hover:scale-110 active:scale-95
+                   flex items-center gap-1.5 md:gap-2 hover:scale-110 active:scale-95
                    animate-pulse-glow"
         title={isMuted ? 'Unmute' : 'Mute'}
       >
-        <Music className="w-5 h-5 text-electric animate-pulse" />
+        <Music className="w-4 h-4 md:w-5 md:h-5 text-electric animate-pulse" />
         {isMuted ? (
-          <VolumeX className="w-5 h-5 text-ice" />
+          <VolumeX className="w-4 h-4 md:w-5 md:h-5 text-ice" />
         ) : (
-          <Volume2 className="w-5 h-5 text-ice animate-float-gentle" />
+          <Volume2 className="w-4 h-4 md:w-5 md:h-5 text-ice animate-float-gentle" />
         )}
       </button>
 
       {/* Welcome Header - Enhanced */}
-      <div className="pt-20 pb-10 text-center relative z-10">
+      <div className="pt-12 md:pt-20 pb-6 md:pb-10 px-4 text-center relative z-10">
         <div className="fade-in-up">
-          <h1 className="font-cinzel text-5xl md:text-8xl font-bold glow-text text-foreground mb-6
-                       hover:scale-105 transition-transform duration-500">
+          <h1 className="font-cinzel text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold glow-text text-foreground mb-4 md:mb-6
+                       hover:scale-105 transition-transform duration-500 leading-tight">
             Happiest Birthday to my Rem
           </h1>
-          <p className="text-ice font-rajdhani text-xl md:text-3xl animate-pulse-glow">
+          <p className="text-ice font-rajdhani text-lg sm:text-xl md:text-2xl lg:text-3xl animate-pulse-glow">
             A small gift for my precious Remmy
           </p>
         </div>
 
-        <div className="mt-10 animate-bounce">
-          <ChevronDown className="w-10 h-10 text-electric mx-auto drop-shadow-[0_0_15px_rgba(0,180,255,0.8)]" />
+        <div className="mt-6 md:mt-10 animate-bounce">
+          <ChevronDown className="w-8 h-8 md:w-10 md:h-10 text-electric mx-auto drop-shadow-[0_0_15px_rgba(0,180,255,0.8)]" />
         </div>
       </div>
 
@@ -103,8 +103,8 @@ const Celebration = () => {
       </div>
 
       {/* Divider - Enhanced */}
-      <div className="flex items-center justify-center py-12">
-        <div className="w-1/3 h-0.5 bg-gradient-to-r from-transparent via-electric to-transparent animate-pulse-glow shadow-glow-electric" />
+      <div className="flex items-center justify-center py-8 md:py-12">
+        <div className="w-2/3 md:w-1/3 h-0.5 bg-gradient-to-r from-transparent via-electric to-transparent animate-pulse-glow shadow-glow-electric" />
       </div>
 
       {/* Gallery Section */}
@@ -113,8 +113,8 @@ const Celebration = () => {
       </div>
 
       {/* Divider */}
-      <div className="flex items-center justify-center py-8">
-        <div className="w-1/3 h-px bg-gradient-to-r from-transparent via-ice to-transparent" />
+      <div className="flex items-center justify-center py-6 md:py-8">
+        <div className="w-2/3 md:w-1/3 h-px bg-gradient-to-r from-transparent via-ice to-transparent" />
       </div>
 
       {/* Letter Section */}
@@ -123,8 +123,8 @@ const Celebration = () => {
       </div>
 
       {/* Footer */}
-      <footer className="py-12 text-center relative z-10">
-        <div className="text-muted-foreground font-rajdhani text-sm">
+      <footer className="py-8 md:py-12 px-4 text-center relative z-10">
+        <div className="text-muted-foreground font-rajdhani text-xs sm:text-sm">
           <p>Made with 💙 for the most amazing person</p>
           <p className="mt-2 text-electric/50">
             "Bury the Light" plays in the background~
