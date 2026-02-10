@@ -127,7 +127,7 @@ const Celebration = () => {
         <div className="text-muted-foreground font-rajdhani text-xs sm:text-sm">
           <p>Made with 💙 for the most amazing person</p>
           <p className="mt-2 text-electric/50">
-            "The Color Violet" thanks for the info cutie 💕~
+            "The Color Violet" plays in background, thanks for the info cutie 💕~
           </p>
         </div>
       </footer>
